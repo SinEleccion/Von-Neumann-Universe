@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>{titulo de la entrada}</title>
+        <title>Numeros ordianles</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -14,6 +14,19 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              },
+              svg: {
+                fontCache: 'global'
+              }
+            };
+            </script>
+            <script type="text/javascript" id="MathJax-script" async
+              src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+            </script>
     </head>
     <body>
         <!-- Navigation-->
@@ -40,12 +53,12 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="post-heading">
-                            <h1>{Sobre los números ordinales}</h1>
-                            <h2 class="subheading">{Una primera mirada al concepto de ordinales de von Neumann}</h2>
+                            <h1>Sobre los números ordinales</h1>
+                            <h2 class="subheading">Una primera mirada al concepto de ordinales de von Neumann</h2>
                             <span class="meta">
                                 Publicado por
-                                <a href="#!">{José Manuel Campos Noguera}</a>
-                                en {15 de Marzo de 2023}
+                                <a href="#!">José Manuel Campos Noguera</a>
+                                el 15 de Marzo de 2023
                             </span>
                         </div>
                     </div>
@@ -65,7 +78,7 @@
                         <p>Ahora, ¿Qué son exactamente estos ordinales de von Neumann y que es $\omega$?</p>
                         <p>Diremos que un ordinal de von Neumann $\alpha$ es el conjunto bien ordenado que contiene a los ordinales anteriores a $\alpha$; es decir, $\alpha$ es una "capa" que recubre a todos los anteriores ordinales a ella, es como las capas o pieles de una cebolla.</p>
                         <p>Conseguiremos esto mediante un proceso llamado "inducción transfinita", la cuál podemos ver mediante el siguiente proceso: Primero tomamos el conjunto vacío como el menor ordinal posible, esto es, $\emptyset = 0$, después dado un ordinal $\beta$ construimos el siguiente o su sucesor ($\beta + 1$), como la unión de $\beta$ con el singleton o conjunto unitario cuyo único elemento es el propio $\beta$, es decir: $$\beta + 1 : = \beta \cup \{ \beta \}$$ Y finalmente dado un conjunto de ordinales $B$ la unión de todos ellos tambien será un ordinal, es decir, $\cup_{\beta \in B} \beta$ es un ordinal. </p>
-                        <p>Note que de esta forma podemos definir el ordinal $1$ como $\{ \emptyset \}$ y tiene exactamente un elemento, mientras que por ejemplo el $2$ será: $\{\emptyset , \{ \emptyset \} \} = \{0,1}\$ y tiene dos elemntos; con este proceso podríamos construir todos los ordinales finitos, (los cuales satisfacen que su cardinal es exactamente el propio ordinal que representan), y también mediante el tercer paso del proceso podemos definir $\omega$ justamente como la unión de todos los cordinales finitos.</p>
+                        <p>Note que de esta forma podemos definir el ordinal $1$ como $\{ \emptyset \}$ y tiene exactamente un elemento, mientras que por ejemplo el $2$ será: $\{\emptyset , \{ \emptyset \} \} = \{0,1\}$ y tiene dos elemntos; con este proceso podríamos construir todos los ordinales finitos, (los cuales satisfacen que su cardinal es exactamente el propio ordinal que representan), y también mediante el tercer paso del proceso podemos definir $\omega$ justamente como la unión de todos los cordinales finitos.</p>
                         <p>Definidos de esta forma los ordinales de von Neumann tienen una propiedad curiosa, si $m < n$ entonces se da que $m \in n$ y $m \subset n$.</p>
                         <blockquote class="blockquote">Cabe hacer la aclaración que formalmente los ordinales son una clase, no un conjunto, aunque en la teoría axiomática de Zermelo-Fraenkel esta salvedad es inecesaria, mientras que en otras teorías axiomáticas como en NBG es fundamental hacer esta salvedad.</blockquote>
                     </div>
@@ -79,23 +92,7 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <ul class="list-inline text-center">
                             <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
+                                <a href="https://github.com/SinEleccion/sineleccion.github.io">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -103,7 +100,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2022</div>
+                        <div class="small text-center text-muted fst-italic"> &copy; </div>
                     </div>
                 </div>
             </div>
