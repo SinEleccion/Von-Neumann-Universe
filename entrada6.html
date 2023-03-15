@@ -40,12 +40,12 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="post-heading">
-                            <h1>{titulo entrada}</h1>
-                            <h2 class="subheading">{subtitulo}</h2>
+                            <h1>{Sobre los números ordinales}</h1>
+                            <h2 class="subheading">{Una primera mirada al concepto de ordinales de von Neumann}</h2>
                             <span class="meta">
                                 Publicado por
-                                <a href="#!">{nombre}</a>
-                                en {fecha}
+                                <a href="#!">{José Manuel Campos Noguera}</a>
+                                en {15 de Marzo de 2023}
                             </span>
                         </div>
                     </div>
@@ -59,14 +59,14 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <p>En el idioma común los números ordinales se usan para indicar los números de un conjunto bajo un cierto orden, por ejemplo par designar cual de ellos es el primero, el segundo, etc.</p>
                         <p>Sin embargo, estos nos son todos los usos o términos que se pueden asociar a este concepto, y fue justamente de esto de los que se dieron cuenta Cantor y von Neumann; resulta ser que podemos extender los número naturales ($\mathbb{N}$), en particular los números ordinales se definen como el tipo de orden de un conjunto bien ordenado; esto significa que los ordinales forman un orden total que engloba a los naturales y que además tienen la propiedad de que cada subconjunto de ordinales tiene un elemento mínimo</p>
-                        <p>La propiedad antes mencionada se relaciona estrechamente con el concepto de "relacoón bien fundada" que se verá a mayor profundidad en otra entrada, pero como primer acercamiento diremos que un conjunto $A$ es bien ordenado es un conjunto que tiene un orden total y que además es bien fundado.</p>
+                        <p>La propiedad antes mencionada se relaciona estrechamente con el concepto de "relación bien fundada" que se verá a mayor profundidad en otra entrada, pero como primer acercamiento diremos que un conjunto $A$ es bien ordenado es un conjunto que tiene un orden total y que además es bien fundado.</p>
                         <h2 class="section-heading">Respecto de $\omega$ y los ordinales de von Neumann</h2>
                         <p>El ordinal mas pequeño que obtiene relevancia es $\omega$, introducido por Cantor, y aparte de ser el número transfinito de Cantor mas "pequeño", es también el conjunto de todos los ordinales finitos.</p>
                         <p>Ahora, ¿Qué son exactamente estos ordinales de von Neumann y que es $\omega$?</p>
                         <p>Diremos que un ordinal de von Neumann $\alpha$ es el conjunto bien ordenado que contiene a los ordinales anteriores a $\alpha$; es decir, $\alpha$ es una "capa" que recubre a todos los anteriores ordinales a ella, es como las capas o pieles de una cebolla.</p>
                         <p>Conseguiremos esto mediante un proceso llamado "inducción transfinita", la cuál podemos ver mediante el siguiente proceso: Primero tomamos el conjunto vacío como el menor ordinal posible, esto es, $\emptyset = 0$, después dado un ordinal $\beta$ construimos el siguiente o su sucesor ($\beta + 1$), como la unión de $\beta$ con el singleton o conjunto unitario cuyo único elemento es el propio $\beta$, es decir: $$\beta + 1 : = \beta \cup \{ \beta \}$$ Y finalmente dado un conjunto de ordinales $B$ la unión de todos ellos tambien será un ordinal, es decir, $\cup_{\beta \in B} \beta$ es un ordinal. </p>
                         <p>Note que de esta forma podemos definir el ordinal $1$ como $\{ \emptyset \}$ y tiene exactamente un elemento, mientras que por ejemplo el $2$ será: $\{\emptyset , \{ \emptyset \} \} = \{0,1}\$ y tiene dos elemntos; con este proceso podríamos construir todos los ordinales finitos, (los cuales satisfacen que su cardinal es exactamente el propio ordinal que representan), y también mediante el tercer paso del proceso podemos definir $\omega$ justamente como la unión de todos los cordinales finitos.</p>
-                        <p>Definidos de esta forma los ordinales de von Neumann tienen una propiedad curiosa, si $m < n$ entonces se da que $m \in n$ y $m \subset n$.<\p>
+                        <p>Definidos de esta forma los ordinales de von Neumann tienen una propiedad curiosa, si $m < n$ entonces se da que $m \in n$ y $m \subset n$.</p>
                         <blockquote class="blockquote">Cabe hacer la aclaración que formalmente los ordinales son una clase, no un conjunto, aunque en la teoría axiomática de Zermelo-Fraenkel esta salvedad es inecesaria, mientras que en otras teorías axiomáticas como en NBG es fundamental hacer esta salvedad.</blockquote>
                     </div>
                 </div>
