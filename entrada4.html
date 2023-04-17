@@ -53,12 +53,12 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="post-heading">
-                            <h1>{titulo entrada}</h1>
-                            <h2 class="subheading">{subtitulo}</h2>
+                            <h1>{Introdución a las relaciones bien fundadas}</h1>
+                            <h2 class="subheading">{}</h2>
                             <span class="meta">
                                 Publicado por
-                                <a href="#!">{nombre}</a>
-                                en {fecha}
+                                <a href="#!">{José Manuel Campos Noguera}</a>
+                                en {30 de Marzo de 2023}
                             </span>
                         </div>
                     </div>
@@ -70,28 +70,23 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
-                        <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
-                        <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
-                        <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
-                        <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
-                        <h2 class="section-heading">The Final Frontier</h2>
-                        <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-                        <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-                        <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-                        <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-                        <h2 class="section-heading">Reaching for the Stars</h2>
-                        <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/post-sample-image.jpg" alt="..." /></a>
-                        <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-                        <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-                        <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-                        <p>
-                            Placeholder text by
-                            <a href="http://spaceipsum.com/">Space Ipsum</a>
-                            &middot; Images by
-                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
-                        </p>
+                        <p>Antes de empezar, debemos recordar que es una relación como tal. Una relación es intuitivamente una conexión entre elementos de un par de conjuntos $A$ y $B$, es decir, es un objeto que a un elemento $a \in A$ le asigna un elemento $b \in B$</p>
+                        <p>Mas formalmente, una relación $R$ es un subconjunto de $A \times B$, esto es, un conjunto cuyos elementos son, siguiendo la definición de Karatowski, de la forma $(a,b) = {{a},{a,b}}$. </p>
+                        <p>Las relaciones pueden ser de muchos tipos basadas en cuantos elementos conectan a la vez, en particular se usarán las relaciones binarias, es decir, aquellas que conectan unicamente dos elementos a la vez. Diremos que una relación es sobre $A$ (u homogénea) si y solo si $R \subseteq A \times A$. Es sobre este último tipo de ralaciónes que podemos definir las relaciones de orden para los elementos de $A$.</p>
+                        <p>El primer tipo que encontramos son los preordenes, son aquellas relaciones homogeneas que son reflexivas y transitivas. Si además es simétrica la relación será una relación de equivalencia, las cuales son particularmente utiles pues nos permiter obtener las clases de equivalencia de un conjunto, las cuales son los representantes de todos los elementos que se pueden "clasificar" con dich relación. </p>
+                        <p>Si por otro lado el preorden es antisimétrico entonces diremos que la relación es un orden parcial; sobre estos podemos definir los elementos maximal y minimal de todo subconjunto $D$ de $A$, y un elemento maximal será aquel $a \in A$ que satisface que si $a \leq x$ entonces $a = x$; algo simialr para los elementos minimales.</p>
+                        <p>Note que no hemos hablado de que todos los elementos en $A$ sean comparables bajo nuestro orden parcial $R$, para ello debemos definir justamente al orden total o cadena, como aquel orden parcial que es comparable con todos los demás elementos de $A$.</p>
+                        <p>Con todas estas nociones ya podemos hablar en contexto de las relaciones bien fundadas: Partamos del orden parcial $R$, este será una relación bien fundada si para todo subconjunto $B$ de $A$ existe al menos un elemento minimal bajo esta relación. Se puede extender esta noción a los ordenes totales, con el que obtenemos el llamado buen orden del conjunto $A$. Como curiosidad existe el Teorema de Zermelo, el cual dice que todo conjunto $A$ puede ser bien ordenado; este teorema resulta ser equivalente al axioma de elección. </p>
+                        <blockquote class="blockquote">Como nota, la definición de relación bien fundada puede y debe ser extendiada para tratar las clases, pues estas son fundamentales en NBG.</blockquote>
+                        <p>Formalmente una relación $R$ sobre la clase $A$ se dice bien fundada si: $$\forall X (X \subset A \land X \neq \emptyset \rightarrow \exists y \in X \ \forall z \in X \ \neg (z\ R \ y))$$</p>
+                        <h2 class="section-heading">Propiedades y teoremas importantes de las relaciones bien fundadas</h2>
+                        <blockquote class="blockquote">1) Todo orden parcial sobre un conjunto finito es bin fundado.</blockquote>
+                        <blockquote class="blockquote">2) La propiedad de la secuencia infinita en una relación bien fundada.</blockquote>
+                        <p>Sean $A$ una clase y $R$ una relación sobre ella. $R$ es una relación bien fundada si y solo si no hay una suceción infinita ${a_i}$ de elementos de $A$ tales que: $\forall n \in \mathbb{N} a_{n+1}\ R \ a_i$ </p>
+                        <blockquote class="blockquote">3) Todo subconjunto de una relación bien fundada es bien fundada.</blockquote>
+                        <p>Sean $A$ una clase y $R$ una relación bien fundada sobre dicha clase. Si $Q \subseteq R$ entonces $Q$ también es una relación bien fundada en $A$.</p>
+                        <blockquote class="blockquote">4) Teorema general de inducción transfinita.</blockquote>
+                        <p>Sea $R$ una relación bien fundada sobre una clase $A$ y sea $B$ una clase arbitraria, se da que $\forall x \in A (A^{R}_{x} \subset B \rightarrow x\in B) \rightarrow A\subset B$. Donde A^{R}_{x} es la clase de todos los elementos de $A$ menores que $x$ , es decir, $A^{R}_{x} = (a\in A / a \ R \ x).</p>                        
                     </div>
                 </div>
             </div>
