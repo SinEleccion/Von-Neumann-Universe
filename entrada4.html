@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>{titulo de la entrada}</title>
+        <title>{Relaciones bien fundadas.}</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -53,8 +53,8 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="post-heading">
-                            <h1>Introdución a las relaciones bien fundadas</h1>
-                            <h2 class="subheading"></h2>
+                            <h1>Introdución a las relaciones bien fundadas.</h1>
+                            <h2 class="subheading">Un paseo por el concepto de relación y su importancia en la teoria de conjuntos.</h2>
                             <span class="meta">
                                 Publicado por
                                 <a href="#!">José Manuel Campos Noguera</a>
@@ -71,10 +71,10 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <p>Antes de empezar, debemos recordar que es una relación como tal. Una relación es intuitivamente una conexión entre elementos de un par de conjuntos $A$ y $B$, es decir, es un objeto que a un elemento $a \in A$ le asigna un elemento $b \in B$</p>
-                        <p>Mas formalmente, una relación $R$ es un subconjunto de $A \times B$, esto es, un conjunto cuyos elementos son, siguiendo la definición de Karatowski, de la forma $(a,b) = {{a},{a,b}}$. </p>
+                        <p>Mas formalmente, una relación $R$ es un subconjunto de $A \times B$, esto es, un conjunto cuyos elementos son, siguiendo la definición de Karatowski, de la forma $(a,b) = \{ \{a \} , \{a,b \} \}$. </p>
                         <p>Las relaciones pueden ser de muchos tipos basadas en cuantos elementos conectan a la vez, en particular se usarán las relaciones binarias, es decir, aquellas que conectan unicamente dos elementos a la vez. Diremos que una relación es sobre $A$ (u homogénea) si y solo si $R \subseteq A \times A$. Es sobre este último tipo de ralaciónes que podemos definir las relaciones de orden para los elementos de $A$.</p>
                         <p>El primer tipo que encontramos son los preordenes, son aquellas relaciones homogeneas que son reflexivas y transitivas. Si además es simétrica la relación será una relación de equivalencia, las cuales son particularmente utiles pues nos permiter obtener las clases de equivalencia de un conjunto, las cuales son los representantes de todos los elementos que se pueden "clasificar" con dich relación. </p>
-                        <p>Si por otro lado el preorden es antisimétrico entonces diremos que la relación es un orden parcial; sobre estos podemos definir los elementos maximal y minimal de todo subconjunto $D$ de $A$, y un elemento maximal será aquel $a \in A$ que satisface que si $a \leq x$ entonces $a = x$; algo simialr para los elementos minimales.</p>
+                        <p>Si por otro lado el preorden es antisimétrico entonces diremos que la relación es un orden parcial; sobre estos podemos definir los elementos maximal y minimal de todo subconjunto $D$ de $A$, diremos que un elemento maximal será aquel $a \in A$ que satisface que si $a \leq x$ entonces $a = x$; la situación es similar para los elementos minimales.</p>
                         <p>Note que no hemos hablado de que todos los elementos en $A$ sean comparables bajo nuestro orden parcial $R$, para ello debemos definir justamente al orden total o cadena, como aquel orden parcial que es comparable con todos los demás elementos de $A$.</p>
                         <p>Con todas estas nociones ya podemos hablar en contexto de las relaciones bien fundadas: Partamos del orden parcial $R$, este será una relación bien fundada si para todo subconjunto $B$ de $A$ existe al menos un elemento minimal bajo esta relación. Se puede extender esta noción a los ordenes totales, con el que obtenemos el llamado buen orden del conjunto $A$. Como curiosidad existe el Teorema de Zermelo, el cual dice que todo conjunto $A$ puede ser bien ordenado; este teorema resulta ser equivalente al axioma de elección. </p>
                         <blockquote class="blockquote">Como nota, la definición de relación bien fundada puede y debe ser extendiada para tratar las clases, pues estas son fundamentales en NBG.</blockquote>
