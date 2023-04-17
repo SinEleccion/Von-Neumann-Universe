@@ -1,0 +1,141 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>{titulo de la entrada}</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              },
+              svg: {
+                fontCache: 'global'
+              }
+            };
+            </script>
+            <script type="text/javascript" id="MathJax-script" async
+              src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+            </script>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Sin Eleccion</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">Integrantes</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="proyect.html">El proyecto</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Bibliografia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/origin.jpeg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Recursión Transfinita</h1>
+                            <h2 class="subheading">Una mirada al infinito y más allá </h2>
+                            <span class="meta">
+                                Publicado por
+                                <a href="#!">Tania Vasquez</a>
+                                en {15/04/2023}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section-heading">La recursión</h2>
+                        <p>La recursión es un concepto fundamental en la teoría de conjuntos, que se utiliza para definir funciones que se aplican repetidamente a un conjunto o una propiedad de un conjunto. En la teoría de conjuntos, la recursión se utiliza para construir conjuntos y funciones que tienen propiedades especiales, y que no pueden ser definidos mediante una descripción finita.</p>
+                        <h2 class="section-heading">Transfinita</h2>
+                        <p>Sin embargo, la recursión tradicional se limita a conjuntos finitos de datos, lo que nos lleva a preguntarnos: ¿qué pasa cuando queremos aplicar una función a conjuntos infinitos?</p>
+                        <p>Es aquí donde entra en juego la recursión transfinita, que se aplica a conjuntos infinitos y se extiende más allá de los números naturales. Comenzamos con un conjunto o un elemento base, y luego aplicamos repetidamente una función a este conjunto, extendiéndolo a través de todos los ordinales. Los ordinales son números que representan el orden de un conjunto en una secuencia bien ordenada, y nos permiten extender la recursión más allá de los números naturales.</p>
+                        <p>Un ejemplo clásico de la recursión transfinita es la construcción de la jerarquía de conjuntos de von Neumann. Esta jerarquía se construye aplicando repetidamente una función a un conjunto base vacío, extendiéndolo a través de todos los ordinales. El resultado es una secuencia de conjuntos que crecen en tamaño a medida que avanzamos en la jerarquía.</p>
+                        <p>Otro ejemplo seria sea $F:\mathrm{On} \rightarrow \mathrm{On}$ una función que asigna a cada ordinal $\alpha$ el menor ordinal que no está en la imagen de $F$ para ningún ordinal menor que $\alpha$.</p>
+
+                            Podemos definir esta función $F$ mediante una recursión transfinita como sigue:
+                            
+                            \begin{equation}
+                            F(\alpha) = \min \left\lbrace\beta\in\mathrm{On} \mid \beta \not\in {F(\gamma) \mid \gamma < \alpha}\right\rbrace.
+                            \end{equation}
+                            
+                            Es decir, para cada ordinal $\alpha$, definimos $F(\alpha)$ como el menor ordinal que no ha sido asignado a ningún ordinal menor que $\alpha$.
+                            
+                            Por ejemplo, podemos calcular $F(0), F(1), F(2), \ldots$ de la siguiente manera:
+                            
+                            \begin{align*}
+                            F(0) &= \min \left\lbrace{\beta\in\mathrm{On} \mid \beta \not\in {}}\right\rbrace = 0, \\
+                            F(1) &= \min \left\lbrace{\beta\in\mathrm{On} \mid \beta \not\in {F(0)}}\right\rbrace  = 1, \\
+                            F(2) &= \min \left\lbrace{\beta\in\mathrm{On} \mid \beta \not\in {F(0),F(1)}}\right\rbrace  = 2, \\
+                            & \quad \vdots \\
+                            F(\omega) &= \min \left\lbrace{\beta\in\mathrm{On} \mid \beta \not\in {F(0),F(1),F(2),\ldots}}\right\rbrace  = \omega.
+                            \end{align*}</p>
+                            
+                        <p>Es importante destacar que la definición de la función $F$ utiliza una recursión transfinita a lo largo de todos los números ordinales. Esta construcción es un ejemplo clásico de cómo la recursión transfinita se utiliza en la teoría de conjuntos y es un ejemplo de una construcción que solo puede hacerse transfinitamente, ya que no hay un número ordinal límite al cual detener la recursión.</p>
+                        <p>Un tercer ejemplo de la recursión transfinita es la construcción del conjunto de todos los conjuntos, que es un conjunto que no puede ser definido dentro de la teoría de conjuntos estándar. Este conjunto se construye aplicando la operación de potencia de manera transfinita, extendiéndolo a través de todos los ordinales. Podemos definir esta construcción como:</p>
+                        <p>$$
+                            V_{\alpha+1} = \mathcal{P}(V_{\alpha})
+                            $$
+                            
+                            $$
+                            V_{\alpha} = \bigcup_{\beta<\alpha} V_{\beta}
+                            $$</p>
+                        <p>donde $\mathcal{P}(X)$ es el conjunto de todos los subconjuntos de $X$, y $\alpha$ es un ordinal. El resultado es una jerarquía de conjuntos que contiene todos los conjuntos que podemos construir en la teoría de conjuntos.</p>
+                        <blockquote class="blockquote">En conclusión, la recursión transfinita es un concepto fascinante que nos permite explorar la infinidad y construir conjuntos y funciones que desafían nuestra intuición sobre los conjuntos finitos.</h2>
+                        <p>Si bien puede parecer abstracto y complicado al principio, la recursión transfinita es una herramienta poderosa que se utiliza en diversos campos de las matemáticas, como la teoría de conjuntos, la teoría de la computación y la topología.</p>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                           
+                            <li class="list-inline-item">
+                                <a href="https://github.com/SinEleccion/sineleccion.github.io">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic"> &copy; </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
