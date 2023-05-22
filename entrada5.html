@@ -53,8 +53,8 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="post-heading">
-                            <h1>{titulo entrada}</h1>
-                            <h2 class="subheading">{subtitulo}</h2>
+                            <h1>{La jerarquia V y sus semejantes.}</h1>
+                            <h2 class="subheading">{Conformación del universo de Von Neumann y su necesidad.}</h2>
                             <span class="meta">
                                 Publicado por
                                 <a href="#!">{nombre}</a>
@@ -70,28 +70,28 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
-                        <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
-                        <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
-                        <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
-                        <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
-                        <h2 class="section-heading">The Final Frontier</h2>
-                        <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-                        <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-                        <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-                        <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-                        <h2 class="section-heading">Reaching for the Stars</h2>
-                        <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/post-sample-image.jpg" alt="..." /></a>
-                        <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-                        <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-                        <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-                        <p>
-                            Placeholder text by
-                            <a href="http://spaceipsum.com/">Space Ipsum</a>
-                            &middot; Images by
-                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
-                        </p>
+                        <p>Como ya se ha visto a lo largo de la historia de la teoría de conjuntos, no toda formula del lenguaje de la lógica de predicados de primer orden lleva a objetos matemáticos que podamos considerar en la teoría conjuntista, sin ir muy lejos con la formula para definir al conjunto $x = \{ a \mid a \notin a \}$ nos lleva a la paradoja de Russell. Pero esto solo sucede si $x$ es un conjunto, si dijeramos que $x$ no está "disponible" en esta etapa del proceso de construcción, es decir, si decimos que $x \in x$ nunca se da ya no habría problema.</p>
+                        <p>Pero esto arroja una pregunta obvia, si $x$ como tal no está en consideración, ¿Dónde "viven" los $a$?, es decir, si el conjunto es fundamentalmente distinto de sus elementos, ¿de dónde puedo obtener dichos elementos para empezar?, esto parece indicarnos que la teoría de conjuntos tal como la entendemos es naturalmente jerárquica, pues partiendo de una colección inical $M_0$ podemos obtener los elementos de los conuntos que formarán otra etapa $M_1$ y con esto poder seguir construyendo una jerarquía.</p>
+                        <p>En el caso de la jerarquía de Von Neumann (V) comenzaremos con la identificación del primer nivel de la jerarquía dado por: $$V_0 = \emptyset $$. Para construir el siguiente nivel deberemos darnos cuenta de que cada nivel de la misma estará caraterizada por un ordinal $\alpha$ y que además todos los elementos del nivel anterior deberán estar contenidos por $\bigcup_{\beta < \alpha} V_\alpha$. Para ser mas claros con este punto veamos como debería cambiar la situación entre los niveles $V_{\alpha + 1} y V_\alpha $: una posibilidad sería pensar en todos aquellos conjuntos que se pueden expresar mediante una fórmula de la lógica de primer orden, y si bien no es mala idea, estamos adoptando implicitamente al Axioma de constructibilidad, lo cuál no es lo más objetivo; por otro lado, si decimos que $V_{\alpha +1}$ está compuesto por todos los posibles subconjuntos que están en $V_\alpha$ estamos adoptando el Axioma del conjunto de partes, y definimos $$V_{\alpha +1} = \wp (V_\alpha) $$, y en caso de estar frente a un ordinal límite tomaremos la misma definición que en este caso particular será $$V_\lambda = \bigcup_{\beta < \lambda} V_{\beta}$$</p>
+                        <p>Con esto podemos decir cosas importantes, primero, que al usar el conjunto de partes obtenemos objetos unicamente matemáticos y segundo, todo conjunto $x$ pertenece a algún $V_\alpha$. Esto nos permite definir lajerarquia hereditaria de Von Neumann de manera intuitiva como $V = \bigcup_{\alpha} V_\alpha$, para ver que está bien fundamentada esta jerarquía usaremos el Axioma de fundación:</p>
+                        <blockquote class="blockquote"> Si $V$ no esta bien fundada es porque existe un $x_0 \neq \emptyset$ tal que $x_0 \subset x_0$, lo cuál contradice directamente el axioma de fundación, pues $x_0$ tendría un elemento que no es subconjunto de $x_0$.</blockquote>
+                        <p>Para la definición de $V$ usamos los siguiente axiomas: Existencia del conjunto vacío, Uniones, Reemplazo, Partes, Separación y Fundamentación, en particular este último es equivalente a la definición dada de $V$.</p>
+                        <h2 class="section-heading">Teoremas importantes sobre la jerarquía</h2>
+                        <blockquote class="blockquote">1) V no es un conjunto sino una clase propia. </blockquote>
+                        <blockquote class="blockquote">2) Si $\alpha < \omega$ entonces $V_\alpha$ es finito. </blockquote>
+                        <blockquote class="blockquote">3) $(V_\omega , \in )$ no satisface el axioma del infinito. </blockquote>
+                        <blockquote class="blockquote">4) Si $x \in y \in V_\alpha $ entonces $x \in V_\alpha$ con $\alpha < \omega + \omega$. Este teorema nos dice que es transitivo, y es más general pero es más fácil de verificar hasta esta escala.</blockquote>
+                        <h2 class="section-heading">Relación con el universo constructible</h2>
+                        <p>Cuando definimos la jerarquia de Von Neumann tomamos por cierto el axioma del conjunto de partes sin realmente definir o acotar que es tomar el conjunto de partes de un cierto conjunto, esto nos permite ir por otro camino, no usar explicitamente este axioma; si hacemos esto tendremos que modificar unicamente la definición del nivel $\alpha + 1$, y dejaremos el resto intacato, para ello construiremos a dicho nivel siempre que ya tengamos el nivel $\alpha$ de la sigueinte manera: </p>
+                        <blockquote class="blockquote">X pertenecerá a este nivel si y solo si existe una formula del lenguaje de la teoría de conjuntos $\phi$ y los elementos $a_1 ,..., a_m \in L_{\alpha}$ representados en $\phi$ son tales que X es la colección de todo $x \in L_{\alpha}$ y $\phi (x)$ es verdadero.</blockquote>
+                        <p>Así, definimos la jerarquía o universo constructible como $$L = \bigcup_{\alpha \in On} L_\alpha $$ con las condiciones: $$L_0 = \emptyset $$ $$L_{\lambda} = \bigcup_{\alpha < \lambda} L_{\alpha}$$ $$L_{\alpha +1} = Todas las colecciones de elementos dados por una formula del lenguaje de la lógica de primer orden.$$</p>
+                        <p>Este conjunto tiene algunas propiedades interesantes, entre ellas: </p>
+                        <blockquote class="blockquote">1) Si $\alpha \leq \beta$ entonces $L_\alpha \subseteq L_\beta$ </blockquote>
+                        <blockquote class="blockquote">2) $L_\alpha$ es transitivo. </blockquote>
+                        <blockquote class="blockquote">3) $ \lvert L_\alpha \rvert = \lvert \alpha \rvert </blockquote>
+                        <p>Esta última nos lleva al caso particular $\lvert L_{\omega +1} \rvert = \aleph_0$ mientras que como $\wp (\omega) \subseteq V_{\omega +1}$ tenemos que $\lvert V_{\omega +1} \rvert > \aleph_0$; esto parecería indicarnos que $L$ "crece" más lento que $V$, pero ¿en algún momento se alcanzan?</p>
+                        <p>Si bien dijimos que podiamos llegar a $L$ ignorando el axioma del conjunto de partes, lo cierto es que podemos construirla en base a la recursión sobre los ordinales, y para ello podemos usar la teoría de Zermelo - Fraenkel para generarla; para ello usaremos la función $Def(x)$ la cuál asigna a todo $x \in V$ el conjunto de los subconjuntos de $x$ que son definibles con una fórmula del lenguaje de la lógica de primer orden sobre un universo parcial, así: $$Def(L_\alpha) = L_{\alpha +1}$$ </p>
+                        <p>Con todo esto podemos ver que podemos adoptar un axioma extra en la teoría ZF, el cuál es el llamado Axioma de constructabilidad, este nos permite definir de manera rígida el concepto de conjunto. Pero estas no son todas las ventajas que nos brinda adoptar este axioma, pues si lo damos por hecho, tendremos que todo conjunto es bien ordenable, y por lo tanto el axioma de elección es verdadero en este modelo, además, la hipótesis del continuo generalizada también resulta ser cierta. </p>
                     </div>
                 </div>
             </div>
